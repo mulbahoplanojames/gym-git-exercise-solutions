@@ -59,5 +59,45 @@ git push --set-upstream origin dev
 ### Exercise 2
 
 ```bash
+# Create home.html and attempt to stash
+touch home.html
+git stash
 
+# Check status
+git status
+
+# Add home.html
+git add .
+git status
+
+# Stash home.html
+git stash
+
+# Create and add about.html
+touch about.html
+git add about.html
+
+# Stash about.html
+git stash
+
+# Create and add team.html
+touch team.html
+git add team.html
+
+# Stash team.html
+git stash
+
+# Apply stashed changes
+git stash pop stash@{1}
+git stash pop stash@{1}
+
+# Add and commit home.html and about.html
+git add .
+git commit -m "Add and Setup home.html and about.html page"
+
+# Apply remaining stash with team.html
+git stash pop
+
+# Reset to previous commit
+git reset --hard
 ```
