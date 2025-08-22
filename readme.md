@@ -13,6 +13,9 @@ This README file contains my solutions for most of the bundles of the Git exerci
 - [Bundle 3](#bundle-3)
   - [Exercise 1](#bundle-3-exercise-1)
   - [Exercise 2](#bundle-3-exercise-2)
+- [Bundle 5](#bundle-5)
+  - [Exercise 1](#bundle-5-exercise-1)
+  - [Exercise 2](#bundle-5-exercise-2)
 
 ## Bundle 1
 
@@ -357,4 +360,48 @@ Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git push --s
 # Create PR for ft/home-page-redesign
 I created a pull request for the ft/home-page-redesign branch on GitHub.
 
+```
+
+## Bundle 5
+
+### Bundle 5 Exercise 1
+
+```bash
+# I enable the github page for the gym-git-exercise-solutions repository on GitHub.
+
+# I check the github page and it is available to everyone.
+```
+
+### Bundle 5 Exercise 2
+
+```bash
+#  Fork the repository
+I forked the repository on GitHub.
+
+
+# Clone the forked repository
+I cloned the repository from my forked repository on GitHub to my local machine.
+
+git clone git@github.com:mulbahoplanojames/git-cafe-exercise.git
+
+# cd into the repository
+cd git-cafe-exercise
+
+# Edit index.html to change the welcome text
+I updated the index.html file in VSCode
+
+# Check the changes
+git diff
+
+# Add index.html
+git add index.html
+
+# Commit index.html
+git commit -m "chore: update welcome message to 'Welcome to our restaurant'"
+
+# Push the changes to my fork
+git push origin main
+
+# Create a Pull Request
+I created a pull request for the index.html file on GitHub.
 ```
