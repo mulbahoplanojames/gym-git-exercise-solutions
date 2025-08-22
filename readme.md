@@ -10,6 +10,9 @@ This README file contains my solutions for most of the bundles of the Git exerci
 - [Bundle 2](#bundle-2)
   - [Exercise 1](#exercise-1)
   - [Exercise 2](#exercise-2)
+- [Bundle 3](#bundle-3)
+  - [Exercise 1](#exercise-1)
+  - [Exercise 2](#exercise-2)
 
 ## Bundle 1
 
@@ -207,5 +210,106 @@ Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git commit
 
 # Push the resolved branch
 Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git push
+
+```
+
+## Bundle 3
+
+### Exercise 1
+
+```bash
+# Create and switch to ft/team-page branch
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git checkout -b ft/team-page
+
+# Create team.html
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > touch team.html
+
+# Add team.html
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git add team.html
+
+# Commit team.html
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git commit -m "feat: add team page with initial content"
+
+# Push team.html
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git push --set-upstream origin ft/team-page
+
+# Create PR
+I created a pull request for the ft/team-page branch on GitHub.
+
+# Switch to master
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git checkout master
+
+# Create and switch to ft/contact-page
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git checkout -b ft/contact-page
+
+# Switch back to ft/team-page
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git checkout ft/team-page
+
+# Get last commit hash from ft/team-page
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > COMMIT_HASH=$(git log -1 --pretty=format:"%H")
+
+# Switch back to ft/contact-page
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git checkout ft/contact-page
+
+# Cherry-pick changes from ft/team-page
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git cherry-pick $COMMIT_HASH
+
+# Switch back to ft/contact-page
+Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git checkout ft/contact-page
+
+# Add contact page content
+touch contact.html
+
+# Add contact.html
+git add contact.html
+
+# Commit contact.html
+git commit -m "feat: add contact page"
+
+# Push contact.html
+git push --set-upstream origin ft/contact-page
+
+# Create PR for contact page
+I created a pull request for the ft/contact-page branch on GitHub.
+
+# Create ft/faq-page from ft/contact-page
+git checkout -b ft/faq-page
+
+# Create faq.html with content
+touch faq.html
+
+# Add faq.html
+git add faq.html
+
+# Commit faq.html
+git commit -m "feat: add FAQ page"
+
+# Push faq.html
+git push --set-upstream origin ft/faq-page
+
+# Revert last commit in ft/team-page
+git checkout ft/team-page
+git revert $COMMIT_HASH
+git push
+
+# Switch back to ft/faq-page
+git checkout ft/faq-page
+
+# Add faq.html
+git add faq.html
+
+# Commit faq.html
+git commit -m "feat: add FAQ page"
+
+# Push faq.html
+git push
+
+# Create PR for faq page
+I created a pull request for the ft/faq-page branch on GitHub.
+```
+
+### Exercise 2
+
+```bash
 
 ```
