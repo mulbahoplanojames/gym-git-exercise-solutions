@@ -5,18 +5,18 @@ This README file contains my solutions for most of the bundles of the Git exerci
 ## Table of Contents
 
 - [Bundle 1](#bundle-1)
-  - [Exercise 1](#exercise-1)
-  - [Exercise 2](#exercise-2)
+  - [Exercise 1](#bundle-1-exercise-1)
+  - [Exercise 2](#bundle-1-exercise-2)
 - [Bundle 2](#bundle-2)
-  - [Exercise 1](#exercise-1)
-  - [Exercise 2](#exercise-2)
+  - [Exercise 1](#bundle-2-exercise-1)
+  - [Exercise 2](#bundle-2-exercise-2)
 - [Bundle 3](#bundle-3)
-  - [Exercise 1](#exercise-1)
-  - [Exercise 2](#exercise-2)
+  - [Exercise 1](#bundle-3-exercise-1)
+  - [Exercise 2](#bundle-3-exercise-2)
 
 ## Bundle 1
 
-### Exercise 1
+### Bundle 1 Exercise 1
 
 ```bash
 # Initialize repository
@@ -62,7 +62,7 @@ Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git branch -
 Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git push --set-upstream origin dev
 ```
 
-### Exercise 2
+### Bundle 1 Exercise 2
 
 ```bash
 # Create home.html and attempt to stash
@@ -114,7 +114,7 @@ Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git reset --
 
 ## Bundle 2
 
-### Exercise 1
+### Bundle 2 Exercise 1
 
 ```bash
 # Create and switch to new branch
@@ -152,7 +152,7 @@ Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git push -
 I created a pull request for the ft/bundle-2 branch on GitHub.
 ```
 
-### Exercise 2
+### Bundle 2 Exercise 2
 
 ```bash
 
@@ -215,7 +215,7 @@ Oplanos-MacBook-Pro:gym-first-git-exercise-main  oplanojamesmulbah$ > git push
 
 ## Bundle 3
 
-### Exercise 1
+### Bundle 3 Exercise 1
 
 ```bash
 # Create and switch to ft/team-page branch
@@ -308,7 +308,7 @@ git push
 I created a pull request for the ft/faq-page branch on GitHub.
 ```
 
-### Exercise 2
+### Bundle 3 Exercise 2
 
 ```bash
 
