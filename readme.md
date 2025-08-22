@@ -14,90 +14,94 @@ This README file contains my solutions for most of the bundles of the Git exerci
 
 ```bash
 # Initialize repository
-git init
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ >  git init
 
 # Check status
-git status
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git status
 
 # Add README.md file
-touch README.md
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > touch README.md
 
 # Rename branch to master
-git branch -m master
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git branch -m master
 
 # Check branches
-git branch
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git branch
 
 # Add all files
-git add .
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git add .
 
 # Make initial commit
-git commit -m "Initial commit\n\n- Add initial README.md file with project description\n- Create table of contents for exercise solutions\n- Set up structure for Bundle 1 with placeholders for exercises\n- Include basic formatting and code blocks for command examples"
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git commit -m "Initial commit\n\n- Add initial README.md file with project description\n- Create table of contents for exercise solutions\n- Set up structure for Bundle 1 with placeholders for exercises\n- Include basic formatting and code blocks for command examples"
 
 # Set up remote
-git remote add origin https://github.com/mulbahoplanojames/gym-git-exercise-solutions.git
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git remote add origin https://github.com/mulbahoplanojames/gym-git-exercise-solutions.git
 
 # Push to remote and set upstream
-git push --set-upstream origin master
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git push --set-upstream origin master
 
 # Create and switch to dev branch
-git checkout -b dev
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git checkout -b dev
 
 # Create and switch to test branch
-git checkout -b test
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git checkout -b test
 
 # Switch back to dev
-git checkout dev
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git checkout dev
 
 # Delete test branch
-git branch -d test
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git branch -d test
 
 # Push dev branch to remote
-git push --set-upstream origin dev
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git push --set-upstream origin dev
 ```
 
 ### Exercise 2
 
 ```bash
 # Create home.html and attempt to stash
-touch home.html
-git stash
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > touch home.html
+
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git stash
 
 # Check status
-git status
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git status
 
 # Add home.html
-git add .
-git status
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git add .
+
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git status
 
 # Stash home.html
-git stash
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git stash
 
 # Create and add about.html
-touch about.html
-git add about.html
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > touch about.html
+
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git add about.html
 
 # Stash about.html
-git stash
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git stash
 
 # Create and add team.html
-touch team.html
-git add team.html
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > touch team.html
+
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git add team.html
 
 # Stash team.html
-git stash
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git stash
 
 # Apply stashed changes
-git stash pop stash@{1}
-git stash pop stash@{1}
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git stash pop stash@{1}
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git stash pop stash@{1}
 
 # Add and commit home.html and about.html
-git add .
-git commit -m "Add and Setup home.html and about.html page"
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git add .
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git commit -m "Add and Setup home.html and about.html page"
 
 # Apply remaining stash with team.html
-git stash pop
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git stash pop
 
 # Reset to previous commit
-git reset --hard
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git reset --hard
 ```
