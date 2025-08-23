@@ -13,6 +13,9 @@ This README file contains my solutions for most of the bundles of the Git exerci
 - [Bundle 3](#bundle-3)
   - [Exercise 1](#bundle-3-exercise-1)
   - [Exercise 2](#bundle-3-exercise-2)
+- [Bundle 4](#bundle-4)
+  - [Exercise 1](#bundle-4-exercise-1)
+  - [Exercise 2](#bundle-4-exercise-2)
 - [Bundle 5](#bundle-5)
   - [Exercise 1](#bundle-5-exercise-1)
   - [Exercise 2](#bundle-5-exercise-2)
@@ -365,6 +368,84 @@ Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git push --s
 # Create PR for ft/home-page-redesign
 I created a pull request for the ft/home-page-redesign branch on GitHub.
 
+```
+
+## Bundle 4
+
+### Bundle 4 Exercise 1
+
+```bash
+# Switch to main branch
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ >  git checkout master
+
+# Create a new repository on GitHub
+I created a new repository on GitHub.
+
+# Then add it as a remote
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git remote add git-copy https://github.com/mulbahoplanojames/gym-git-exercise-copy.git
+
+# Make changes to home page
+I updated the home.html file in VSCode
+
+# Stage the changes
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git add .
+
+# Commit the changes
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git commit -m "chore: update home page content"
+
+# Push to origin (original remote)
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git push origin master
+
+# Push to git-copy (new remote)
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git push git-copy master
+
+```
+
+### Bundle 4 Exercise 2
+
+```bash
+# Create and switch to new footer branch
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ >  git checkout -b ft/footer
+
+# Make first set of changes to footer
+# (edit files as needed)
+I updated the footer.html file in VSCode
+
+# Stage and commit first set of changes
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git add .
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git commit -m "feat: add basic footer structure"
+
+# Make second set of changes to footer
+# (edit files as needed)
+I updated the footer.html, contact.html, and home.html files in VSCode
+
+# Stage and commit second set of changes
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git add .
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git commit -m "feat: enhance footer with social links and styling"
+
+# Push to remote and create PR
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git push -u origin ft/footer
+
+# Create PR in GitHub
+I created a pull request for the ft/footer branch on GitHub.
+
+# Switch back to main
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git checkout master
+
+# Create and switch to new squashing branch
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git checkout -b ft/squashing
+
+# Merge and squash the footer branch
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git merge --squash ft/footer
+
+# Create a single commit with squashed changes
+git commit -m "feat: complete footer implementation with styling and social links with footer changes squashing"
+
+# Push to remote
+Oplanos-MacBook-Pro:gym-git-exercise-solutions oplanojamesmulbah$ > git push -u origin ft/squashing
+
+# Create PR in GitHub
+I created a pull request for the ft/squashing branch on GitHub.
 ```
 
 ## Bundle 5
