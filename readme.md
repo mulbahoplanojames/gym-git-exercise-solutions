@@ -16,6 +16,11 @@ This README file contains my solutions for most of the bundles of the Git exerci
 - [Bundle 5](#bundle-5)
   - [Exercise 1](#bundle-5-exercise-1)
   - [Exercise 2](#bundle-5-exercise-2)
+- [Bundle 6](#bundle-6)
+  - [Exercise 1](#bundle-6-exercise-1)
+  - [Exercise 2](#bundle-6-exercise-2)
+  - [Exercise 3](#bundle-6-exercise-3)
+  - [Exercise 4](#bundle-6-exercise-4)
 
 ## Bundle 1
 
@@ -382,26 +387,105 @@ I forked the repository on GitHub.
 # Clone the forked repository
 I cloned the repository from my forked repository on GitHub to my local machine.
 
-git clone git@github.com:mulbahoplanojames/git-cafe-exercise.git
+Oplanos-MacBook-Pro:oplanojamesmulbah$ > git clone git@github.com:mulbahoplanojames/git-cafe-exercise.git
 
 # cd into the repository
-cd git-cafe-exercise
+Oplanos-MacBook-Pro:oplanojamesmulbah$ > cd git-cafe-exercise
 
 # Edit index.html to change the welcome text
 I updated the index.html file in VSCode
 
 # Check the changes
-git diff
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ >git diff
 
 # Add index.html
-git add index.html
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ >git add index.html
 
 # Commit index.html
-git commit -m "chore: update welcome message to 'Welcome to our restaurant'"
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ >git commit -m "chore: update welcome message to 'Welcome to our restaurant'"
 
 # Push the changes to my fork
-git push origin main
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ >git push origin main
 
 # Create a Pull Request
 I created a pull request for the index.html file on GitHub.
+```
+
+## Bundle 6
+
+### Bundle 6 Exercise 1
+
+```bash
+# cd into the repository
+Oplanos-MacBook-Pro:oplanojamesmulbah$ > cd git-cafe-exercise
+
+# Create and switch to a new feature branch
+git checkout -b feature/add-menu-page
+
+# Create a new menu.html file
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > touch menu.html
+
+# Add menu.html
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git add menu.html
+
+# Commit menu.html
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git commit -m "feat: add menu page"
+
+# Push the changes to my fork
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git push origin feature/add-menu-page
+
+# Create a Pull Request
+I created a pull request for the feature/add-menu-page branch on GitHub.
+
+```
+
+### Bundle 6 Exercise 2
+
+```bash
+# Create and switch to a new bugfix branch
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git checkout -b bugfix/update-contact-title
+
+# Rename index-4.html to contact.html
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git mv index-4.html contact.html
+
+# Stage the changes
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git add contact.html
+
+# Commit the changes
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git commit -m "fix: rename index-4.html to contact.html"
+
+# Push the branch to remote
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git push -u origin bugfix/update-contact-title
+
+# Create a Pull Request
+I created a pull request for the bugfix/update-contact-title branch on GitHub.
+```
+
+### Bundle 6 Exercise 3
+
+```bash
+# Create and switch to a new hotfix branch
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git checkout -b hotfix-contact
+
+# Edit the phone number in index-4.html in VSCode
+# (Update the number from +1 800 603 6035 to +1 800 659 6035)
+
+# Stage the changes
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git add index-4.html
+
+# Commit the changes
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git commit -m "fix: update contact phone number to +1 800 659 6035"
+
+# Push the branch to remote
+Oplanos-MacBook-Pro:git-cafe-exercise oplanojamesmulbah$ > git push -u origin hotfix-contact
+
+# Create a Pull Request
+I created a pull request for the hotfix-contact branch on GitHub.
+```
+
+### Bundle 6 Exercise 4
+
+```bash
+# Create and review pull requests from your peers on GitHub.
+I reviewed the pull requests from my peers on GitHub and merged the pull requests that were approved.
 ```
